@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>TRIGONOJUMP</title>
+</head>
+<body>
+
+    <header>
+        <h1>TRIGONOJUMP</h1>
+        <h2>A matemática por trás de cada salto</h2>
+        <img src="src/assets/imgs/foto-principal.png" alt="Foto principal">
+    </header>
+
+    <nav>
+        <a href="#angulos">Ângulos</a>
+        <a href="#radianos">Radianos</a>
+        <a href="#sen-cos-tan">Sen/cos/tan</a>
+        <a href="#circulo">Círculo Trigonométrico</a>
+        <a href="#funcoes">Funções</a>
+        <a href="#grande-pequeno">Grande e pequeno</a>
+        <a href="#teste">Teste</a>
+        <a href="conclusao">Conclusão</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <p>
+                Em um salto de hipismo, o cavalo desenha um arco no ar. Nesse arco estão escondidos ângulos, radianos, círculos e ondas. Aqui vamos descobrir como a trigonometria explica o salto, a rotação da Terra e até o som de um relincho.
+            </p>
+        </section>
+
+        <section id="angulos">
+            <h2>Ângulos, o triângulo de cada salto</h2>
+            <h3>Cada salto desenha um arco. Cada arco tem matemática.</h3>
+            <p>
+                Um ângulo mede a abertura entre duas linhas. Imagine uma linha no chão e outra subindo do ponto de decolagem até o topo da barra: elas formam um <strong>triângulo retângulo</strong>.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z5sUN6t-Ns0?si=FBUUdN-Zfcd5wk7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p>O vídeo mostra, em 3D, o arco que o cavalo faz no ar e o ponto ideal de decolagem. Quando ele decola longe demais, o arco fica achatado. Quando decola no ponto certo, o arco é equilibrado e sobra tempo para ajustar as passadas.</p>
+            <h4><strong>Salto de referência</strong>: salto de 1 metro</h4>
+            <p>
+                tan = 
+                <span class="fracao">
+                    <span>co (altura)</span>
+                    <span>ca (distância)</span>
+                </span>
+            </p>
+            <img src="src/assets/imgs/angulos.png" alt="ângulos cavalo">
+            <table border="2">
+                <tr>
+                    <th>Decolagem</th>
+                    <th>Conta</th>
+                    <th>Ângulo</th>
+                    <th>Arco</th>
+                </tr>
+                <tr>
+                    <td>Longe(2m)</td>
+                    <td>1 &divide; 2 = 0,5</td>
+                    <td>&asymp; 26,6&deg;</td>
+                    <td>baixo e achatado</td>
+                </tr>
+                <tr>
+                    <td>Um pouco longe (1,5m)</td>
+                    <td>1 &divide; 1,5 &asymp; 0,67</td>
+                    <td>&asymp; 33,7&deg;</td>
+                    <td>mais baixo que o ideal</td>
+                </tr>
+                <tr>
+                    <td><strong>Ideal (1m)</strong></td>
+                    <td>1 &divide; 1 = 1</td>
+                    <td><strong>45&deg;</strong></td>
+                    <td>equilibrado</td>
+                </tr>
+                <tr>
+                    <td>Perto(0,5m)</td>
+                    <td>1 &divide; 0,5 = 2</td>
+                    <td>&asymp; 63,4&deg;</td>
+                    <td>quase vertical</td>
+                </tr>
+            </table>
+            <h3>Por que acertar a distância é tão importante?</h3>
+            <p>
+                Quanto mais perto da barra o cavalo decola, maior o ângulo (63&deg; em vez de 45&deg;). Com a subida quase vertical, sobra pouco espaço para passar por cima, e por isso é <strong>mais provável fazer falta</strong>, como derrubar a barra. Decolar longe demais também não é bom, porque o arco fica baixo (27&deg;). Chegar só 50 cm mais perto muda o ângulo em 18&deg;, então a distância precisa ser a mais perfeita possível.
+            </p>
+            <h3>Poucos centímetros na distância mudam o ângulo, e o ângulo decide o salto.</h3>
+        </section>
+
+        <section id="radianos">
+            <h2>Radianos, medindo o arco do salto</h2>
+            <p>
+                O arco do salto é uma curva, e o radiano é a forma de medir o quanto essa curva "gira". Graus e radianos são duas formas de medir ângulos. Uma volta completa vale <strong>360&deg;</strong> ou <strong>2&pi; rad</strong>
+            </p>
+            <table border="2">
+                <tr>
+                    <th>Graus</th>
+                    <th>45&deg;</th>
+                    <th>90&deg;</th>
+                    <th>135&deg;</th>
+                    <th>180&deg;</th>
+                </tr>
+                <tr>
+                    <td>Radianos</td>
+                    <td>
+                        <span class="fracao">
+                            <span>&pi;</span>
+                            <span>4</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="fracao">
+                            <span>&pi;</span>
+                            <span>2</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="fracao">
+                            <span>3&pi;</span>
+                            <span>4</span>
+                        </span>
+                    </td>
+                    <td>&pi;</td>
+                </tr>
+            </table>
+            <p>Para converter, multiplique os graus por 
+                <span class="fracao">
+                    <span>&pi;</span>
+                    <span>180</span>
+                </span>
+                Exemplo: 45&deg; &times;
+                <span class="fracao">
+                    <span>&pi;</span>
+                    <span>180</span>
+                </span>
+                = 
+                <span class="fracao">
+                    <span>&pi;</span>
+                    <span>4</span>
+                </span>
+            </p>
+            <h3>O salto como meia volta</h3>
+            <p>No nosso salto de referência, o arco é meia volta de um círculo de 1 metro de raio, ou seja, <strong>&pi; rad</strong>. O comprimento de um arco é o ângulo (em radianos) vezes o raio: <strong>S = &theta; &times; r</strong></p>
+            <table border="2">
+                <tr>
+                    <th>Parte do salto</th>
+                    <th>Ângulo</th>
+                    <th>Em radianos</th>
+                    <th>O cavalo percorre</th>
+                </tr>
+                <tr>
+                    <td>Um pedaço do arco</td>
+                    <td>45&deg;</td>
+                    <td>
+                        <span class="fracao">
+                            <span>&pi;</span>
+                            <span>4</span>
+                        </span>
+                    </td>
+                    <td>&asymp;0,79m</td>
+                </tr>
+                <tr>
+                    <td>Da decolagem ao topo da barra</td>
+                    <td>90&deg;</td>
+                    <td>
+                        <span class="fracao">
+                            <span>&pi;</span>
+                            <span>2;</span>
+                        </span>
+                    </td>
+                    <td>&asymp;1,57m</td>
+                </tr>
+                <tr>
+                    <td>Até a descida</td>
+                    <td>135&deg;</td>
+                    <td>
+                        <span class="fracao">
+                            <span>3&pi;</span>
+                            <span>4</span>
+                        </span>
+                    </td>
+                    <td>&asymp;2,36m</td>
+                </tr>
+                <tr>
+                    <td><strong>O salto inteiro</strong></td>
+                    <td>180&deg;</td>
+                    <td>&pi;</td>
+                    <td>&asymp;3,14m</td>
+                </tr>
+            </table>
+            <p>Ou seja, o cavalo percorre cerca de 3,14m no ar para cobrir 2m no chão. Quanto maior o ângulo, maior o caminho percorrido.</p>
+        </section>
+        
+        <section id="circulo">
+            <h2>Círculo Trigonométrico</h2>
+            <p>
+                O círculo trigonométrico tem <strong>raio 1</strong>. Lembra do nosso salto de referência? A decolagem fica a 1m antes da barra, a aterrissagem a 1m depois, e a barra tem 1m de altura. Esses três pontos ficam exatamente em cima de um círculo de raio 1, com o centro no chão, embaixo da barra> Então o arco do salto é a <strong>metade de cima</strong> do círculo trigonométrico
+                Cada posição do cavalo no ar é um ângulo &theta;, e o ponto onde ele está tem coordenadas <strong>(cos &theta;, sen &theta;)</strong>. O <strong>cosseno</strong> diz onde o cavalo está em relação à barra, e o <strong>seno</strong> diz a que altura ele está.
+            </p>
+            <img src="src/assets/imgs/arco.png" alt="arco trigonométrico">
+            <table border="2">
+                <tr>
+                    <th>Momento do salto</th>
+                    <th>Ângulo</th>
+                    <th>cos &theta; (posição)</th>
+                    <th>sen &theta; (altura)</th>
+                </tr>
+                <tr>
+                    <td>Decolagem</td>
+                    <td>180&deg;</td>
+                    <td>-1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Subindo</td>
+                    <td>135&deg;</td>
+                    <td>-0,71</td>
+                    <td>0,71</td>
+                </tr>
+                <tr>
+                    <td><strong>Sobre a barra</strong></td>
+                    <td>90&deg;</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Descendo</td>
+                    <td>45&deg;</td>
+                    <td>0,71</td>
+                    <td>0,71</td>
+                </tr>
+                <tr>
+                    <td>Aterrissagem</td>
+                    <td>0&deg;</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <p>
+                Posição negativa quer dizer antes da barra, e positiva quer dizer depois dela. O <strong>seno</strong> nunca é negativo durante o salto, porque o cavalo está sempre no ar. Este é um modelo simples: o arco real do salto não é um círculo perfeito>
+            </p>
+            <h3>Quadrantes: em que parte do círculo o cavalo está?</h3>
+            <p>O salto acontece só na metade de cima do círculo. Antes da barra o cavalo está no <strong>2&ordm; quadrante</strong> (cosseno negativo). Depois da barra, está no <strong>1&ordm; quadrante</strong> (cosseno positivo).</p>
+            <table border="2">
+                <tr>
+                    <th></th>
+                    <th>1&ordm; (0&deg; a 90&deg;</th>
+                    <th>2&ordm; (90&deg; a 180&deg;</th>
+                    <th>3&ordm; (180&deg; a 270&deg;</th>
+                    <th>4&ordm; (270&deg; a 360&deg;</th>
+                </tr>
+                <tr>
+                    <td>Seno</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Cosseno</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>+</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="seno-cos-tan">
+            <h4>Em um triângulo retângulo: </h4>
+            <ul>
+                <li>sen &theta; = cateto oposto &divide; hipotenusa</li>
+                <li>cos &theta; = cateto adjacente &divide; hipotenusa</li>
+                <li>tan &theta; = cateto oposto &divide; cateto adjacente</li>
+            </ul>
+            <p><strong>No salto de 45&deg;</strong>: a linha da decolagem até o topo da barra é a hipotenusa: &radic;(1&sup2; + 1&sup2;) = &radic;2 &asymp; 1,41m</p>
+        </section>
+
+        <section id="funções">
+            <h2>Funções trigonométricas, o salto como onda</h2>
+            <p>
+                O arco do salto lembra uma meia onda de seno> Com os nossos números, a altura do cavalo em cada ponto é: 
+                <strong>h(x) = sen (&pi;x &divide; 2), com x em metros, de 0 a 2</strong>
+                Aqui x = 0 é a decolagem, x = 1 é a barra e x = 2 é a aterrissagem. 
+            </p>
+            <img src="src/assets/imgs/ondas.png" alt="grafico">
+            <table border="2">
+                <tr>
+                    <th>Posição x</th>
+                    <th>0m</th>
+                    <th>0,5m</th>
+                    <th>1m</th>
+                    <th>1,5m</th>
+                    <th>2m</th>
+                </tr>
+                <tr>
+                    <td>Altura h</td>
+                    <td>0</td>
+                    <td>0,71m</td>
+                    <td>1m</td>
+                    <td>0,71m</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            <p>
+                <strong>Amplitude</strong> (altura máxima): 1m. <strong>Período</strong> (uma onda completa): 2&pi; &divide; (
+                    <span class="fracao">
+                        <span>&pi;</span>
+                        <span>2</span>
+                    </span>
+                ) = 4m.
+                Se o cavalo saltasse obstáculos em sequência, a onda se repetiria. Isso é o que chamamos de função <strong>periódica</strong>. 
+            </p>
+        </section>
+
+        <section id="grande-pequeno">
+            <h2>Do muito grande ao muito pequeno</h2>
+            <p>
+                <strong>Dia a dia no hipisimo: </strong>
+                O ângulo de 45&deg; do salto, a distância de decolagem e o arco em forma de onda vêm da rotina de uma amazona/cavaleiro. Cada treino é uma aula de trigonometria.
+                <strong>Dia a dia: a sombra da barra</strong>
+                Quando o sol está a 45&deg;, a sombra de um objeto tem o mesmo tamanho dele, porque tan 45&deg; = 1. O salto de 1 metro projeta uma sombra de 1 m no chão> Rampas, escadas e telhados por exemplo usam a mesma conta do salto.
+                <strong>A Terra</strong>
+                A Terra dá uma volta completa (360&deg;) em 24 horas: 360&deg; &divide; 24 = 15&deg; por hora, ou &pi;/12 rad por hora. Perto do equador, isso é cerca de 1700Km por hora> estamos todos girando em um círculo, como o círculo do salto. Em um salto de cerca de 1 segundo, a Terra gira só uns 0,004&deg;.
+                <strong>O som e a luz</strong>
+                O som é uma onda de seno. Um relincho agudo de 1000Hz repete a onda 1000 vezes por segundo, e cada onda dura 0,001s: em um salto de cerca de 1 segundo, são mil ondas. A luz também é uma onda, e cada uma mede menos de um milionésimo de metro. 
+                <strong>Tecnologia e engenharia</strong>
+                A trigonometria calcula posições, distâncias e rotações na engenharia, na arquitetura, na programação e nos jogos de computador. 
+            </p>
+            <h4>Do salto de 2m à Terra de milhares de Km, e ao som de 0,001s, a trigonometria é a mesma.</h4>
+        </section>
+
+        <section id="teste">
+            <h2>Teste seus conhecimentos</h2>
+            <ol type="1-">
+                <li>Quanto vale 45&deg; em radianos?</li>
+                <ol type="a">
+                    <li>&pi;/2</li>
+                    <li>&pi;</li>
+                    <li>&pi;/4</li>
+                </ol>
+                <li>Salto de 1m e decolagem de 1m. Qual o ângulo?</li>
+                <ol type="a">
+                    <li>30&deg;</li>
+                    <li>45&deg;</li>
+                    <li>60&deg;</li>
+                </ol>
+                <li>O arco do salto de referência é meia volta de um círculo de raio 1m> Quanto o cavalo percorre no ar?</li>
+                <ol type="a">
+                    <li>&pi;/2 &asymp; 1,57m</li>
+                    <li>&pi; &asymp; 3,14</li>
+                    <li>2&pi; &asymp; 6,28</li>
+                </ol>
+                <li>Com h(x) = sen (&pi;x &divide; 2), qual a altura em x = 0,5m?</li>
+                <ol type="a">
+                    <li>0,71m</li>
+                    <li>0</li>
+                    <li>1m</li>
+                </ol>
+                <li>Se o cavalo decola muito perto da barra o que é provável de acontecer?</li>
+                <ol type="a">
+                    <li>O ângulo diminui e o risco de falta diminui</li>
+                    <li>o ângulo aumenta e o risco de falta aumenta</li>
+                    <li>Nada muda</li>
+                </ol>
+            </ol>
+            <h4><strong>Respostas</strong>1-C, 2-B, 3-B, 4-A, 5-B</h4>
+        </section>
+
+        <section id="conclusao">
+            <p>
+                Neste salto de 1 metro vimos o ângulo de 45&deg;, os radianos (&pi;/4 e &pi;) medindo o arco, o círculo trigonométrico mostrando a posição e a altura do cavalo no ar (cosseno e seno) e a função seno descrevendo a altura. A mesma matemática aparece na sombra da barra, na rotação da Terra e no som de um relincho.
+                Vimos também que a distância certa de decolagem é fundamental: quanto mais perto da barra, maior o ângulo e maior a chance de falta. A trigonometria mostra, com números, por que o cavaleiro precisa acertar o ponto de decolagem. 
+                <span>Um salto real também depende de velocidade, impulsão e do cavalo> Aqui usamos a trigonometria como um <strong>modelo simples</strong> para entender o arco.</span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Hipismo, matemática e conhecimento: uma conexão além dos obstáculos.</h2>
+    </footer>
+    
+</body>
+</html>
