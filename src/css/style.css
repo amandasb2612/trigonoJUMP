@@ -1,0 +1,267 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F4E9;
+    color:#303A30;;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+p {
+    margin: 16px 0;
+}
+
+strong {
+    color: #183D2B;
+}
+
+a {
+    color: #244C38;
+}
+
+header {
+
+    background: linear-gradient();
+
+    background: linear-gradient(135deg, #183D2B , #244C38);
+    color: white;
+    text-align: center;
+    padding: 55px 5% 40px;
+    border-bottom: 4px solid  #D4AF57;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color:  #D4AF57;
+}
+
+header h2 {
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #F7F4E9;
+    margin-bottom: 30px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 5px solid  #D4AF57;
+    border-radius: 14px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 14px 20px;
+    background-color:  #183D2B;
+    border-bottom: 5px solid #D4AF57;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    color:  #F7F4E9;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 14px;
+    border-radius: 25px;
+    transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+nav a:hover {
+    background-color: #D4AF57;
+    color: #183D2B;
+    border-color: #E8CF8B;
+}
+
+main {
+    width: 92%;
+    margin: 45px auto;
+}
+
+section {
+    background-color:white;
+    padding: 45px;
+    margin-bottom: 35px;
+    border: 1px solid #DED8C8;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(24, 61, 43, 0.09);;
+    scroll-margin-top: 100px;
+}
+
+section h2 {
+    color: #183D2B;
+    line-height: 1.35;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+    border-bottom: 3px solid #D4AF57;
+}
+section h3 {
+    color: #244C38;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+section h4 {
+    color: #183D2B;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+section p {
+    text-align: left;
+}
+
+#inicio {
+    border-left: 5px solid #D4AF57;
+}
+
+
+section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    margin: 28px auto;
+    border-radius: 12px;
+}
+
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 28px auto;
+    border: 2px solid #D4AF57;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 28px 0;
+    background-color: white;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #DED8C8;
+    padding: 13px 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #183D2B;
+    color: #F7F4E9;
+    font-weight: bold;
+}
+
+td {
+    color:  #303A30;
+}
+
+tr:hover {
+    background-color: #EAE3CE;
+}
+
+.fracao {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0 4px;
+    white-space: nowrap;
+}
+
+.fracao span:first-child {
+    border-bottom: 1px solid currentColor;
+    padding: 0 5px 3px;
+}
+
+.fracao span:last-child {
+    padding: 3px 5px 0;
+}
+
+ul, ol {
+    padding-left: 30px;
+    margin: 18px 0;
+}
+
+li {
+    padding-left: 5px;
+    margin-bottom: 9px;
+}
+
+li::marker {
+    color: #AE8738;
+    font-weight: bold;
+}
+
+#teste {
+    border-top: 5px solid #D4AF57;
+}
+
+#teste > h2 {
+    color: #183D2B;
+}
+
+#teste > ol > li {
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+#teste ol ol {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+#teste ol ol li {
+    font-weight: normal;
+}
+
+#conclusao {
+    border-left: 5px solid #D4AF57;
+}
+
+footer {
+    background-color:#183D2B;
+    color: #F7F4E9;
+    text-align: center;
+    padding: 38px 20px;
+    border-top: 4px solid #D4AF57;
+}
+
+footer h2 {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #D4AF57;
+    font-weight: normal;
+    line-height: 1.6;
+}
